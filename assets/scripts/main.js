@@ -7,7 +7,6 @@ dates.each(function (index) {
 })
 
 
-
 // Image popup
 const cards = $('.card')
 const popupOverlay = $('#gallery-popup')[0]
@@ -27,37 +26,59 @@ cards.each(function (index) {
         $('body').css("overflow", "hidden");
         selectedImage = $(card[0]).clone()[0];
         popupImageContainer.append(selectedImage)
+
+        // Add event listener on keydown
+        document.addEventListener('keydown', handleKeyEvent, false);
     })
 })
 
+const handleKeyEvent = (event) => {
+    const name = event.key;
+    console.log(name)
+    if (name === 'ArrowRight') loadNextImage()
+    if (name === 'ArrowLeft') loadPrevImage()
+    if (name === 'Escape') closePopup()
+}
+
 $(popupOverlay).click(function () {
+    closePopup()
+})
+
+$(prevArrow).click(function () {
+    loadPrevImage()
+})
+
+$(nextArrow).click(function () {
+    loadNextImage()
+})
+
+const closePopup = () => {
     popupOverlay.classList.remove('visible')
     galleryControls.classList.remove('visible')
     $(popupImageContainer).empty()
     $('body').css("overflow", "auto");
-})
 
-$(prevArrow).click(function () {
-    if (cardIndex < 1) {
-        cardIndex = cards.length - 1
-    } else {
-        cardIndex -= 1
-    }
-    loadImage(cardIndex)
-})
+    // Remove event listener on keydown
+    document.removeEventListener('keydown', handleKeyEvent)
+}
 
-$(nextArrow).click(function () {
-    if (cardIndex >= cards.length - 1) {
-        cardIndex = 0
-    } else {
-        cardIndex += 1
-    }
+const loadPrevImage = () => {
+    if (cardIndex < 1) cardIndex = cards.length - 1
+    else cardIndex -= 1
     loadImage(cardIndex)
-})
+}
+
+const loadNextImage = () => {
+    if (cardIndex >= cards.length - 1) cardIndex = 0
+    else cardIndex += 1
+    loadImage(cardIndex)
+}
 
 const loadImage = (index) => {
     selectedImage = $(cards[index]).clone()[0];
     $(popupImageContainer).empty()
     popupImageContainer.append(selectedImage)
 }
+
+
 
