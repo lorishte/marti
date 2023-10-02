@@ -147,7 +147,7 @@ body {
     .gallery-popup .card__image {
       max-width: 90%;
       height: auto;
-      max-height: 90vh; }
+      max-height: 80vh; }
     .gallery-popup .card__date {
       color: #ababab; }
   .gallery-popup__controls {
