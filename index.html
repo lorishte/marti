@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marti</title>
+    <link rel="stylesheet" href="assets/scss/main.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div id="gallery-popup" class="gallery-popup">
+    <div id="gallery-popup__info" class="gallery-popup__info"></div>
+</div>
+
+<div class="gallery-popup__controls">
+    <span id="prev">&#10140;</span>
+    <span id="next">&#10140;</span>
+</div>
+
+<section class="content">
+    <div class="weekdays">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+        <div class="day">Friday</div>
+        <div class="day">Saturday</div>
+        <div class="day">Sunday</div>
+    </div>
+    <div class="info">
+        <div class="info__row">
+            <div class="card">
+                <div class="card__image">
+                    <img src="/assets/images/24-09-2023.jpg" />
+                </div>
+                <div class="card__copy">
+                    <p class="card__date">24.09.2023</p>
+                    <p class="card__medicine">
+                        <span class="npr">Neprolysin</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img src="/assets/images/25-09-2023.jpg" />
+                </div>
+                <div class="card__copy">
+                    <p class="card__date">25.09.2023</p>
+                    <p class="card__medicine">
+                        <span class="npr">Neprolysin</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img src="/assets/images/26-09-2023.jpg" />
+                </div>
+                <div class="card__copy">
+                    <p class="card__date">26.09.2023</p>
+                    <p class="card__medicine">
+                        <span class="npr">Neprolysin</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img src="/assets/images/27-09-2023.jpg" />
+                </div>
+                <div class="card__copy">
+                    <p class="card__date">27.09.2023</p>
+                    <p class="card__medicine">
+                        <span class="npr">Neprolysin</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img src="/assets/images/28-09-2023.jpg" />
+                </div>
+                <div class="card__copy">
+                    <p class="card__date">28.09.2023</p>
+                    <p class="card__medicine">
+                        <span class="npr">Neprolysin</span>
+                        <span class="pn">Post-Neprol</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img src="/assets/images/29-09-2023.jpg" />
+                </div>
+                <div class="card__copy">
+                    <p class="card__date">29.09.2023</p>
+                    <p class="card__medicine">
+                        <span class="npr">Neprolysin</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img src="/assets/images/01-10-2023.jpg" />
+                </div>
+                <div class="card__copy">
+                    <p class="card__date">01.10.2023</p>
+                    <p class="card__medicine">
+                        <span class="pn">Post-Neprol</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="info__row">
+            <div class="card">
+                <div class="card__image">
+                    <img src="/assets/images/no-image.jpg" />
+                </div>
+                <div class="card__copy">
+                    <p class="card__date"></p>
+                    <p class="card__medicine">
+                        <span class="pn">Post-Neprol</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img src="/assets/images/no-image.jpg" />
+                </div>
+                <div class="card__copy">
+                    <p class="card__date"></p>
+                    <p class="card__medicine">
+                        <span class="pn">Post-Neprol</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img src="/assets/images/no-image.jpg" />
+                </div>
+                <div class="card__copy">
+                    <p class="card__date"></p>
+                    <p class="card__medicine">
+                        <span class="npr">Neprolysin</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img src="/assets/images/no-image.jpg" />
+                </div>
+                <div class="card__copy">
+                    <p class="card__date"></p>
+                    <p class="card__medicine">
+                        <span class="pn">Post-Neprol</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img src="/assets/images/no-image.jpg" />
+                </div>
+                <div class="card__copy">
+                    <p class="card__date"></p>
+                    <p class="card__medicine">
+                        <span class="pn">Post-Neprol</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img src="/assets/images/no-image.jpg" />
+                </div>
+                <div class="card__copy">
+                    <p class="card__date"></p>
+                    <p class="card__medicine">
+                        <span class="pn">Post-Neprol</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img src="/assets/images/no-image.jpg" />
+                </div>
+                <div class="card__copy">
+                    <p class="card__date"></p>
+                    <p class="card__medicine">
+                        <span class="npr">Neprolysin</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="info__row">
+            <div class="card">
+                <div class="card__image">
+                    <img src="/assets/images/no-image.jpg" />
+                </div>
+                <div class="card__copy">
+                    <p class="card__date"></p>
+                    <p class="card__medicine">
+                        <span class="pn">Post-Neprol</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img src="/assets/images/no-image.jpg" />
+                </div>
+                <div class="card__copy">
+                    <p class="card__date"></p>
+                    <p class="card__medicine">
+                        <span class="pn">Post-Neprol</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__image">
+                    <img src="/assets/images/no-image.jpg" />
+                </div>
+                <div class="card__copy">
+                    <p class="card__date"></p>
+                    <p class="card__medicine">
+                        <span class="pn">Post-Neprol</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img src="/assets/images/no-image.jpg" />
+                </div>
+                <div class="card__copy">
+                    <p class="card__date"></p>
+                    <p class="card__medicine">
+                        <span class="npr">Neprolysin</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__image">
+                    <img src="/assets/images/no-image.jpg" />
+                </div>
+                <div class="card__copy">
+                    <p class="card__date"></p>
+                    <p class="card__medicine">
+                        <span class="pn">Post-Neprol</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img src="/assets/images/no-image.jpg" />
+                </div>
+                <div class="card__copy">
+                    <p class="card__date"></p>
+                    <p class="card__medicine">
+                        <span class="pn">Post-Neprol</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img src="/assets/images/no-image.jpg" />
+                </div>
+                <div class="card__copy">
+                    <p class="card__date">24.09.2023</p>
+                    <p class="card__medicine">
+                        <span class="pn">Post-Neprol</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="info__row">
+            <div class="card">
+                <div class="card__image">
+                    <img src="/assets/images/no-image.jpg" />
+                </div>
+                <div class="card__copy">
+                    <p class="card__date"></p>
+                    <p class="card__medicine">
+                        <span class="npr">Neprolysin</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img src="/assets/images/no-image.jpg" />
+                </div>
+                <div class="card__copy">
+                    <p class="card__date"></p>
+                    <p class="card__medicine">
+                        <span class="pn">Post-Neprol</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img src="/assets/images/no-image.jpg" />
+                </div>
+                <div class="card__copy">
+                    <p class="card__date"></p>
+                    <p class="card__medicine">
+                        <span class="pn">Post-Neprol</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img src="/assets/images/no-image.jpg" />
+                </div>
+                <div class="card__copy">
+                    <p class="card__date"></p>
+                    <p class="card__medicine">
+                        <span class="pn">Post-Neprol</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img src="/assets/images/no-image.jpg" />
+                </div>
+                <div class="card__copy">
+                    <p class="card__date"></p>
+                    <p class="card__medicine">
+                        <span class="npr">Neprolysin</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img src="/assets/images/no-image.jpg" />
+                </div>
+                <div class="card__copy">
+                    <p class="card__date"></p>
+                    <p class="card__medicine">
+                        <span class="pn">Post-Neprol</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img src="/assets/images/no-image.jpg" />
+                </div>
+                <div class="card__copy">
+                    <p class="card__date"></p>
+                    <p class="card__medicine">
+                        <span class="pn">Post-Neprol</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
+
+<script src="assets/scripts/main.js"></script>

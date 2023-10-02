@@ -1,0 +1,10 @@
+.info {
+	&__row {
+		display: grid;
+		grid-template-columns: repeat(7, 1fr);
+		gap: 1rem;
+		margin-top: 2rem;
+		padding-bottom: 2rem;
+		border-bottom: 1px solid #95cdb3;
+	}
+}
