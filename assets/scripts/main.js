@@ -14,14 +14,14 @@ const popupOverlay = $('#gallery-popup')[0]
 const popupImageContainer = $('#gallery-popup__info')[0]
 const galleryControls = $('.gallery-popup__controls')[0]
 let selectedImage = null
-let index = null
+let cardIndex = null
 const prevArrow = $('#prev')
 const nextArrow = $('#next')
 
-cards.each(function () {
+cards.each(function (index) {
     const card = $(this)
     card.click(function () {
-        index = card.index()
+        cardIndex = index
         popupOverlay.classList.add('visible')
         galleryControls.classList.add('visible')
         $('body').css("overflow", "hidden");
@@ -38,21 +38,21 @@ $(popupOverlay).click(function () {
 })
 
 $(prevArrow).click(function () {
-    if (index < 1) {
-        index = cards.length - 1
+    if (cardIndex < 1) {
+        cardIndex = cards.length - 1
     } else {
-        index -= 1
+        cardIndex -= 1
     }
-    loadImage(index)
+    loadImage(cardIndex)
 })
 
 $(nextArrow).click(function () {
-    if (index >= cards.length - 1) {
-        index = 0
+    if (cardIndex >= cards.length - 1) {
+        cardIndex = 0
     } else {
-        index += 1
+        cardIndex += 1
     }
-    loadImage(index)
+    loadImage(cardIndex)
 })
 
 const loadImage = (index) => {
