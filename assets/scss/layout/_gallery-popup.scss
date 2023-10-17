@@ -1,5 +1,5 @@
 .gallery-popup {
-	position: absolute;
+	position: fixed;
 	visibility: hidden;
 	opacity: 0;
 	top: 0;
@@ -44,7 +44,7 @@
 		opacity: 0;
 		visibility: hidden;
 		width: 100%;
-		position: absolute;
+		position: fixed;
 		top: 50%;
 		left: 0;
 		transform: translateY(-50%);
