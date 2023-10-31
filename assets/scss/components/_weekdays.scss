@@ -4,11 +4,12 @@
 	padding: 1rem 0;
 	background: $color-white;
 	display: grid;
-	grid-template-columns: repeat(7, 1fr);
+	grid-template-columns: min-content repeat(7, 1fr);
 	gap: 1rem;
+	border-bottom: 1px solid $color-grey-light;
 
 	& .day {
 		font-size: 1.3rem;
-		padding: 0 1rem;
+		padding-left: .2rem;
 	}
 }

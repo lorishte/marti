@@ -215,7 +215,7 @@ body {
 
 .info__row {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: max-content repeat(7, 1fr);
   gap: 1rem;
   margin-top: 2rem;
   padding-bottom: 2rem;
@@ -227,10 +227,11 @@ body {
   padding: 1rem 0;
   background: #fff;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 1rem; }
+  grid-template-columns: min-content repeat(7, 1fr);
+  gap: 1rem;
+  border-bottom: 1px solid #eee; }
   .weekdays .day {
     font-size: 1.3rem;
-    padding: 0 1rem; }
+    padding-left: .2rem; }
 
 /*# sourceMappingURL=main.css.map */
