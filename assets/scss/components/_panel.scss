@@ -1,0 +1,9 @@
+.panel {
+	height: 0;
+	overflow: hidden;
+	transition: .5s;
+
+	&.open {
+		height: auto;
+	}
+}

@@ -6,6 +6,23 @@ dates.each(function (index) {
     $(this).text(date)
 })
 
+// Accordion
+const accordion = document.getElementsByClassName("heading-secondary");
+
+for (let i = 0; i < accordion.length; i++) {
+    accordion[i].addEventListener("click", function() {
+        // this.classList.toggle("active");
+        const panel = $(this).next('.panel')[0];
+        const openClass = 'open'
+
+        if (panel.classList.contains(openClass)) {
+            panel.classList.remove(openClass);
+        } else {
+            panel.classList.add(openClass)
+        }
+    });
+}
+
 
 // Image popup
 const cards = $('.card')
