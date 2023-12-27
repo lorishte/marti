@@ -82,7 +82,7 @@ body {
       line-height: 1.1; } }
 
 .heading-secondary {
-  font-size: 5rem;
+  font-size: 3.2rem;
   margin-bottom: 3rem;
   transition: all .2s;
   font-weight: 800;
@@ -91,18 +91,15 @@ body {
     cursor: pointer; }
   @media only screen and (max-width: 56.25em) {
     .heading-secondary {
-      font-size: 3rem; } }
-  @media only screen and (max-width: 43.75em) {
-    .heading-secondary {
-      font-size: 2rem; } }
+      font-size: 2.4rem; } }
 
 .heading-tertiary {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 600;
   margin-bottom: .5rem; }
-  @media only screen and (max-width: 43.75em) {
+  @media only screen and (max-width: 56.25em) {
     .heading-tertiary {
-      font-size: 1.7rem; } }
+      font-size: 1.6rem; } }
 
 .text-bold {
   font-weight: 500; }
@@ -183,11 +180,12 @@ body {
       visibility: visible; }
 
 .panel {
-  height: 0;
+  max-height: 0;
   overflow: hidden;
-  transition: .5s; }
+  transition: max-height .75s ease-out; }
   .panel.open {
-    height: auto; }
+    max-height: 100%;
+    transition: max-height .75s ease-in; }
 
 .card {
   display: grid;
