@@ -36,7 +36,8 @@
 		}
 
 		.npr,
-		.pn {
+		.pn,
+		.dmtx {
 			padding: .3rem .6rem;
 			border-radius: $border-radius-small;
 		}
@@ -47,6 +48,10 @@
 
 		.npr {
 			background-color: $color-npr;
+		}
+
+		.dmtx {
+			background-color: $color-dmtx;
 		}
 	}
 }

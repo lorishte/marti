@@ -211,13 +211,16 @@ body {
     display: inline-block;
     margin-bottom: .35rem; }
   .card__medicine .npr,
-  .card__medicine .pn {
+  .card__medicine .pn,
+  .card__medicine .dmtx {
     padding: .3rem .6rem;
     border-radius: 0.7rem; }
   .card__medicine .pn {
     background-color: #a6dba4; }
   .card__medicine .npr {
     background-color: #FCD7D7; }
+  .card__medicine .dmtx {
+    background-color: #b4d6ff; }
 
 .info__row {
   display: grid;
