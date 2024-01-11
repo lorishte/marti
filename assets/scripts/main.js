@@ -51,7 +51,6 @@ cards.each(function (index) {
 
 const handleKeyEvent = (event) => {
     const name = event.key;
-    console.log(name)
     if (name === 'ArrowRight') loadNextImage()
     if (name === 'ArrowLeft') loadPrevImage()
     if (name === 'Escape') closePopup()
