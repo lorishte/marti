@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marti</title>
+    <link rel="stylesheet" href="assets/scss/main.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/scripts/createCalendar.js" type="module"></script>
+</head>
+<body>
+<div id="gallery-popup" class="gallery-popup">
+    <div id="gallery-popup__info" class="gallery-popup__info"></div>
+</div>
+
+<div class="gallery-popup__controls">
+    <span id="prev">&#10140;</span>
+    <span id="next">&#10140;</span>
+</div>
+
+
+
+<div class="content">
+
+    <div class="weekdays">
+        <div class="day">#</div>
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+        <div class="day">Friday</div>
+        <div class="day">Saturday</div>
+        <div class="day">Sunday</div>
+    </div>
+
+    <div class="info">
+        <p class="heading-secondary">September</p>
+        <div class="panel">
+            <!--1-->
+            <div class="info__row week">
+
+                <div class="week__number">
+                    <p>1</p>
+                </div>
+
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/09-2023/25-09-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">25.09.2023</p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/09-2023/26-09-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">26.09.2023</p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/09-2023/27-09-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">27.09.2023</p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/09-2023/28-09-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">28.09.2023</p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/09-2023/29-09-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">29.09.2023</p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/09-2023/30-09-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">30.09.2023</p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/10-2023/01-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">01.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="heading-secondary">October</p>
+        <div class="panel">
+            <!--2-->
+            <div class="info__row week">
+
+                <div class="week__number">
+                    <p>2</p>
+                </div>
+
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/10-2023/02-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">02.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/10-2023/03-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">03.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/10-2023/04-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">04.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/10-2023/05-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">05.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/10-2023/06-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">06.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/10-2023/07-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">07.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/10-2023/08-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">08.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--3-->
+            <div class="info__row week">
+
+                <div class="week__number">
+                    <p>3</p>
+                </div>
+
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/10-2023/09-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">09.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/10-2023/10-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">10.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/10-2023/11-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">11.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/10-2023/12-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">12.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/10-2023/13-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">13.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/10-2023/14-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">14.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/10-2023/15-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">15.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--4-->
+            <div class="info__row week">
+
+                <div class="week__number">
+                    <p>4</p>
+                </div>
+
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/10-2023/16-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">16.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/10-2023/17-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">17.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/10-2023/18-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">18.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/10-2023/19-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">19.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/10-2023/20-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">20.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/10-2023/21-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">21.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/10-2023/22-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">22.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--5-->
+            <div class="info__row week">
+
+                <div class="week__number">
+                    <p>5</p>
+                </div>
+
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/10-2023/23-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">23.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/10-2023/24-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">24.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/10-2023/25-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">25.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="./assets/images/10-2023/26-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">26.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="./assets/images/10-2023/27-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">27.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="./assets/images/10-2023/28-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">28.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="./assets/images/10-2023/29-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">29.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="heading-secondary">November</p>
+        <div class="panel">
+            <!--6-->
+            <div class="info__row week">
+                <div class="week__number">
+                    <p>6</p>
+                </div>
+
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/10-2023/30-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">30.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/10-2023/31-10-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">31.10.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/11-2023/01-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">01.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/11-2023/02-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">02.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/11-2023/03-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">03.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/11-2023/04-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">04.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/11-2023/05-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">05.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--7-->
+            <div class="info__row week">
+
+                <div class="week__number">
+                    <p>7</p>
+                </div>
+
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/11-2023/06-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">06.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/11-2023/07-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">07.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/11-2023/08-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">08.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/11-2023/09-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">09.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/11-2023/10-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">10.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/11-2023/11-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">11.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/11-2023/12-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">12.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--8-->
+            <div class="info__row week">
+
+                <div class="week__number">
+                    <p>8</p>
+                </div>
+
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/11-2023/13-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">13.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/11-2023/14-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">14.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/11-2023/15-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">15.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/11-2023/16-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">16.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/11-2023/17-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">17.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/11-2023/18-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">18.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/11-2023/19-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">19.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--9-->
+            <div class="info__row week">
+
+                <div class="week__number">
+                    <p>9</p>
+                </div>
+
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/11-2023/20-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">20.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/11-2023/21-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">21.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/11-2023/22-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">22.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="./assets/images/11-2023/23-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">23.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="./assets/images/11-2023/24-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">24.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="./assets/images/11-2023/25-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">25.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="./assets/images/11-2023/26-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">26.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="heading-secondary">December</p>
+        <div class="panel">
+            <!--10-->
+            <div class="info__row week">
+
+                <div class="week__number">
+                    <p>10</p>
+                </div>
+
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/11-2023/27-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">27.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/11-2023/28-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">28.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/11-2023/29-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">29.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/11-2023/30-11-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">30.11.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/12-2023/01-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">01.12.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/12-2023/02-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">02.12.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/12-2023/03-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">03.12.2023</p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--11-->
+            <div class="info__row week">
+
+                <div class="week__number">
+                    <p>11</p>
+                </div>
+
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/12-2023/04-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">04.12.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/12-2023/05-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">05.12.2023</p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/12-2023/06-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/12-2023/07-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">07.12.2023</p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/12-2023/08-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/12-2023/09-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/12-2023/10-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--12-->
+            <div class="info__row week">
+
+                <div class="week__number">
+                    <p>12</p>
+                </div>
+
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/12-2023/11-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/12-2023/12-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/12-2023/13-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/12-2023/14-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/12-2023/15-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/12-2023/16-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/12-2023/17-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--13-->
+            <div class="info__row week">
+
+                <div class="week__number">
+                    <p>13</p>
+                </div>
+
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/12-2023/18-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/12-2023/19-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/12-2023/20-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="./assets/images/12-2023/21-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="./assets/images/12-2023/22-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="./assets/images/12-2023/23-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="./assets/images/12-2023/24-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--14-->
+            <div class="info__row week">
+
+                <div class="week__number">
+                    <p>14</p>
+                </div>
+
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/12-2023/25-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/12-2023/26-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/12-2023/27-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/12-2023/28-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/12-2023/29-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/12-2023/30-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/12-2023/31-12-2023.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="heading-secondary">January 2024</p>
+        <div class="panel">
+            <!--15-->
+            <div class="info__row week">
+
+                <div class="week__number">
+                    <p>15</p>
+                </div>
+
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/01-2024/01-01-2024.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/01-2024/02-01-2024.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/01-2024/03-01-2024.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/01-2024/04-01-2024.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/01-2024/05-01-2024.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/01-2024/06-01-2024.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/01-2024/07-01-2024.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--16-->
+            <div class="info__row week">
+
+                <div class="week__number">
+                    <p>16</p>
+                </div>
+
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/01-2024/08-01-2024.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="npr">Neprolysin</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/01-2024/09-01-2024.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="pn">Post-Neprol</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/01-2024/10-01-2024.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="dmtx">2x Dermatix</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/01-2024/11-01-2024.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="dmtx">2x Dermatix</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/01-2024/12-01-2024.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="dmtx">2x Dermatix</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/01-2024/13-01-2024.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="dmtx">2x Dermatix</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/no-image.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="dmtx">2x Dermatix</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--17-->
+            <div class="info__row week">
+
+                <div class="week__number">
+                    <p>17</p>
+                </div>
+
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/no-image.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="dmtx">2x Dermatix</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/no-image.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="dmtx">2x Dermatix</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/no-image.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="dmtx">2x Dermatix</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="./assets/images/no-image.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="dmtx">2x Dermatix</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="./assets/images/no-image.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="dmtx">2x Dermatix</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="./assets/images/no-image.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="dmtx">2x Dermatix</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="./assets/images/no-image.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="dmtx">2x Dermatix</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--18-->
+            <div class="info__row week">
+
+                <div class="week__number">
+                    <p>18</p>
+                </div>
+
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/no-image.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="dmtx">2x Dermatix</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/no-image.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="dmtx">2x Dermatix</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/no-image.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="dmtx">2x Dermatix</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/no-image.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="dmtx">2x Dermatix</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/no-image.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="dmtx">2x Dermatix</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/no-image.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="dmtx">2x Dermatix</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__image">
+                        <img src="assets/images/no-image.jpg" />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date"></p>
+                        <p class="card__medicine">
+                            <span class="dmtx">2x Dermatix</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
+
+<script src="assets/scripts/main.js" type="module"></script>

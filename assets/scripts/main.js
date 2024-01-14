@@ -1,10 +1,10 @@
 // Add dates to html
-const startDate = new Date("2023-09-25");
-const dates = $('.card__date')
-dates.each(function (index) {
-    const date = new Date(startDate.getFullYear(), startDate.getMonth(), startDate.getDate() + index).toDateString()
-    $(this).text(date)
-})
+// const startDate = new Date("2023-09-25");
+// const dates = $('.card__date')
+// dates.each(function (index) {
+//     const date = new Date(startDate.getFullYear(), startDate.getMonth(), startDate.getDate() + index).toDateString()
+//     $(this).text(date)
+// })
 
 // Accordion
 const accordion = document.getElementsByClassName("heading-secondary");
