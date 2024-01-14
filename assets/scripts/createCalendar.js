@@ -92,7 +92,7 @@ let weekNumber = 1
 monthsAsKeys.forEach(monthName => {
 
     const panelName = `<p class="heading-secondary">${monthName}</p>`
-    const panel = $('<div class="panel">')
+    const panel = $('<div class="panel open">')
     const week = $('<div class="info__row week">')
     const weekDiv = $(
         `<div class="week__number">
