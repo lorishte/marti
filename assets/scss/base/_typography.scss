@@ -40,15 +40,15 @@ body {
     border: 1px solid transparent;
 
     &:after {
-        content: '';
+        content: ' ';
         position: absolute;
         right: 4rem;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-50%) rotate(0deg);
         display: inline-block;
         width: 1.6rem;
         height: 1.6rem;
-        background: url("/assets/images/arrow_2.png") no-repeat center / contain;
+        background: url("../../assets/images/arrow_2.png") no-repeat center / contain;
         transition: all .2s;
         transition-delay: .15s;
     }
