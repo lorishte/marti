@@ -187,7 +187,7 @@ const addNewWeek = (array, panelName) => {
         const card = $(
             `<div class="card">
                 <div class="card__image">
-                    <img src=${imageUrl}/>
+                    <img src=${imageUrl} />
                 </div>
                 <div class="card__copy">
                     <p class="card__date">${imageDate}</p>
