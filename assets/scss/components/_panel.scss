@@ -1,10 +1,10 @@
 .panel {
 	max-height: 0;
 	overflow: hidden;
-	transition: max-height .75s ease-out;
+	transition: all 1s ease-in-out;
 
 	&.open {
 		max-height: 100%;
-		transition: max-height .75s ease-in;
+		margin-bottom: 5rem;
 	}
 }

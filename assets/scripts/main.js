@@ -11,7 +11,7 @@ const accordion = document.getElementsByClassName("heading-secondary");
 
 for (let i = 0; i < accordion.length; i++) {
     accordion[i].addEventListener("click", function() {
-        // this.classList.toggle("active");
+        this.classList.toggle("active");
         const panel = $(this).next('.panel')[0];
         const openClass = 'open'
 

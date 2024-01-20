@@ -82,16 +82,40 @@ body {
       line-height: 1.1; } }
 
 .heading-secondary {
-  font-size: 3.2rem;
-  margin-bottom: 3rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  padding-left: 5rem;
+  border-radius: 10rem;
   transition: all .2s;
   font-weight: 800;
-  margin-top: 1rem; }
+  background-color: #eee;
+  border: 1px solid transparent; }
+  .heading-secondary:after {
+    content: '';
+    position: absolute;
+    right: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: url("/assets/images/arrow_2.png") no-repeat center/contain;
+    transition: all .2s;
+    transition-delay: .15s; }
   .heading-secondary:hover {
     cursor: pointer; }
+  .heading-secondary.active {
+    border: 1px solid rgba(171, 171, 171, 0.5); }
+    .heading-secondary.active:after {
+      transform: translateY(-50%) rotate(180deg); }
   @media only screen and (max-width: 56.25em) {
     .heading-secondary {
-      font-size: 2.4rem; } }
+      font-size: 2rem; } }
 
 .heading-tertiary {
   font-size: 2.4rem;
@@ -111,7 +135,9 @@ body {
 .content {
   display: grid;
   justify-content: center;
-  padding: 4rem 5vw; }
+  padding: 4rem 5vw;
+  max-width: 130rem;
+  margin: 0 auto; }
   @media only screen and (max-width: 43.75em) {
     .content {
       padding: 4rem 2rem;
@@ -182,10 +208,10 @@ body {
 .panel {
   max-height: 0;
   overflow: hidden;
-  transition: max-height .75s ease-out; }
+  transition: all 1s ease-in-out; }
   .panel.open {
     max-height: 100%;
-    transition: max-height .75s ease-in; }
+    margin-bottom: 5rem; }
 
 .card {
   display: grid;

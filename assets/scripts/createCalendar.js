@@ -1,15 +1,11 @@
 const pn = 'Post-Neprol'
-const npr = 'Neprolysin'
-const dmtx = 'Dermatix'
 
+const npr = 'Neprolysin'
+const dmtx = '2x Dermatix'
 const mapMedicineClasses = {
     'Post-Neprol': 'pn',
     'Neprolysin': 'npr',
-    'Dermatix': 'dmtx'
-}
-
-const mapImageFolders = (date) => {
-    return date.substr(3)
+    '2x Dermatix': 'dmtx'
 }
 
 const months = [
@@ -154,11 +150,14 @@ const months = [
     ]],
 ]
 
-const infoSection = $('.info')
-let weekNumber = 1
-let daysCounter = 0
+const extractImageFolders = (date) => {
+    return date.substr(3)
+}
 
-const addWeek = (array, panelName) => {
+const infoSection = $('#info')
+let weekNumber = 1
+
+const addNewWeek = (array, panelName) => {
     const newWeekRow = $('<div class="info__row week">')
     $(panelName).append(newWeekRow)
 
@@ -176,7 +175,7 @@ const addWeek = (array, panelName) => {
         let imageDate = day.date
         const medicines = day.medicines.map(med => `<span class=${mapMedicineClasses[med]}>${med}</span>`)
 
-        let imageUrl = `assets/images/${mapImageFolders(imageDate)}/${imageDate}.jpg`
+        let imageUrl = `assets/images/${extractImageFolders(imageDate)}/${imageDate}.jpg`
         if (imageUrl === 'assets/images/image/no-image.jpg') imageUrl = 'assets/images/no-image.jpg'
 
         // if (imageDate === 'no-image') {
@@ -200,46 +199,57 @@ const addWeek = (array, panelName) => {
         )
 
         newWeekRow.append(card)
-        daysCounter++
     }
 }
 
-for (let i = 0; i < months.length; i++) {
-    const currentMonth = months[i]
-    const nextMonth = months[i + 1]
-    const currentMontName = currentMonth[0]
-    const currentMonthDays = currentMonth[1]
+const generateContent = () => {
+    for (let i = 0; i < months.length; i++) {
+        const currentMonth = months[i]
+        const nextMonth = months[i + 1]
+        const currentMontName = currentMonth[0]
+        const currentMonthDays = currentMonth[1]
 
-    const panelName = `<p class="heading-secondary">${currentMontName}</p>`
-    infoSection.append(panelName)
-    const panel = $('<div class="panel">')
+        const isTheLastMonth = i === months.length - 1
 
-    if (i === months.length - 1) {
-        $(panel)[0].classList.add('open')
-    }
-    infoSection.append(panel)
-
-
-    while (currentMonthDays.length > 0) {
-        const nextWeekDates = currentMonthDays.slice(0, 7)
-
-        if (nextWeekDates.length < 7) {
-            const difference = 7 - nextWeekDates.length
-            for (let j = 0; j < difference; j++) {
-                if (nextMonth) {
-                    const day = nextMonth[1][0]
-                    nextWeekDates.push(day)
-                    nextMonth[1].shift()
-                } else {
-                    nextWeekDates.push({ date: 'no-image', medicines: [] })
-                }
-            }
+        // Add PANEL_NAME
+        const panelName = $(`<p class="heading-secondary">${currentMontName}</p>`)
+        infoSection.append(panelName)
+        if (isTheLastMonth) {
+            $(panelName)[0].classList.add('active')
         }
 
-        addWeek(nextWeekDates, panel)
-        currentMonthDays.splice(0, 7)
+        // Add PANEL
+        const panel = $('<div class="panel">')
+        infoSection.append(panel)
+        if (isTheLastMonth) $(panel)[0].classList.add('open')
+
+        // Split the days in the current month into weeks
+        while (currentMonthDays.length > 0) {
+            const nextWeekDates = currentMonthDays.slice(0, 7)
+
+            if (nextWeekDates.length < 7) {
+                const difference = 7 - nextWeekDates.length
+                for (let j = 0; j < difference; j++) {
+                    if (nextMonth) {
+                        const day = nextMonth[1][0]
+                        nextWeekDates.push(day)
+                        nextMonth[1].shift()
+                    } else {
+                        nextWeekDates.push({ date: 'no-image', medicines: [] })
+                    }
+                }
+            }
+
+            // Add the new week
+            addNewWeek(nextWeekDates, panel)
+            // Remove added days from the month array
+            currentMonthDays.splice(0, 7)
+        }
     }
 }
+
+generateContent()
+
 
 
 
