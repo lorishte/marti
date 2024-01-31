@@ -1,5 +1,6 @@
-const pn = 'Post-Neprol'
+// import * as fs from 'fs';
 
+const pn = 'Post-Neprol'
 const npr = 'Neprolysin'
 const dmtx = '2x Dermatix'
 const mapMedicineClasses = {
@@ -150,8 +151,16 @@ const months = [
     ]],
 ]
 
-const extractImageFolders = (date) => {
-    return date.substr(3)
+
+const generateImageUrl = (date) => {
+    console.log(date);
+    if (date === 'no-image') return 'assets/images/no-image.jpg'
+    return `assets/images/${date.substr(3)}/${date}.jpg`
+}
+
+const formatDate = (date) => {
+    const reversed = date.split('-').reverse().join('/')
+    return new Date(reversed).toDateString()
 }
 
 const infoSection = $('#info')
@@ -175,22 +184,13 @@ const addNewWeek = (array, panelName) => {
         let imageDate = day.date
         const medicines = day.medicines.map(med => `<span class=${mapMedicineClasses[med]}>${med}</span>`)
 
-        let imageUrl = `assets/images/${extractImageFolders(imageDate)}/${imageDate}.jpg`
-        if (imageUrl === 'assets/images/image/no-image.jpg') imageUrl = 'assets/images/no-image.jpg'
-
-        // if (imageDate === 'no-image') {
-        //     const date = array[0].date.split('-')
-        //     const newDay = Number(date[0]) + j
-        //     imageDate = newDay + '-' + date[1] + '-' + date[2]
-        // }
-
         const card = $(
             `<div class="card">
                 <div class="card__image">
-                    <img src=${imageUrl} />
+                    <img src=${generateImageUrl(imageDate)} />
                 </div>
                 <div class="card__copy">
-                    <p class="card__date">${imageDate}</p>
+                    <p class="card__date">${formatDate(imageDate)}</p>
                     <p class="card__medicine">
                         ${medicines}
                     </p>
@@ -235,7 +235,7 @@ const generateContent = () => {
                         nextWeekDates.push(day)
                         nextMonth[1].shift()
                     } else {
-                        nextWeekDates.push({ date: 'no-image', medicines: [] })
+                        // nextWeekDates.push({ date: '', medicines: [] })
                     }
                 }
             }

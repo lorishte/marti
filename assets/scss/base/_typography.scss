@@ -25,13 +25,13 @@ body {
 
 .heading-secondary {
     position: relative;
+    width: 50%;
     display: flex;
     align-items: center;
     font-size: 2.4rem;
     margin-bottom: 1rem;
     margin-top: 2rem;
-    padding: 2rem;
-    padding-left: 5rem;
+    padding: 1rem 3rem;
     border-radius: $border-radius-round;
     transition: all .2s;
     font-weight: 800;
@@ -42,12 +42,12 @@ body {
     &:after {
         content: ' ';
         position: absolute;
-        right: 4rem;
+        right: 3rem;
         top: 50%;
         transform: translateY(-50%) rotate(0deg);
         display: inline-block;
-        width: 1.6rem;
-        height: 1.6rem;
+        width: 1.2rem;
+        height: 1.2rem;
         background: url("../../assets/images/arrow_2.png") no-repeat center / contain;
         transition: all .2s;
         transition-delay: .15s;
@@ -73,6 +73,10 @@ body {
 
     @include respond(tab-port) {
         font-size: 2rem;
+    }
+
+    @include respond(phone) {
+        width: 100%;
     }
 }
 
