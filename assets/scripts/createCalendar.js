@@ -149,6 +149,37 @@ const months = [
         { date: '30-01-2024', medicines: [dmtx] },
         { date: '31-01-2024', medicines: [dmtx] }
     ]],
+    ['February 2024', [
+        { date: '01-02-2024', medicines: [dmtx] },
+        { date: '02-02-2024', medicines: [dmtx] },
+        { date: '03-02-2024', medicines: [dmtx] },
+        { date: '04-02-2024', medicines: [dmtx] },
+        { date: '05-02-2024', medicines: [dmtx] },
+        { date: '06-02-2024', medicines: [dmtx] },
+        { date: '07-02-2024', medicines: [dmtx] },
+        { date: '08-02-2024', medicines: [dmtx] },
+        { date: '09-02-2024', medicines: [dmtx] },
+        { date: '10-02-2024', medicines: [dmtx] },
+        { date: '11-02-2024', medicines: [dmtx] },
+        /*{ date: '12-02-2024', medicines: [dmtx] },
+        { date: '13-02-2024', medicines: [dmtx] },
+        { date: '14-02-2024', medicines: [dmtx] },
+        { date: '15-02-2024', medicines: [dmtx] },
+        { date: '16-02-2024', medicines: [dmtx] },
+        { date: '17-02-2024', medicines: [dmtx] },
+        { date: '18-02-2024', medicines: [dmtx] },
+        { date: '19-02-2024', medicines: [dmtx] },
+        { date: '20-02-2024', medicines: [dmtx] },
+        { date: '21-02-2024', medicines: [dmtx] },
+        { date: '22-02-2024', medicines: [dmtx] },
+        { date: '23-02-2024', medicines: [dmtx] },
+        { date: '24-02-2024', medicines: [dmtx] },
+        { date: '25-02-2024', medicines: [dmtx] },
+        { date: '26-02-2024', medicines: [dmtx] },
+        { date: '27-02-2024', medicines: [dmtx] },
+        { date: '28-02-2024', medicines: [dmtx] },
+        { date: '29-02-2024', medicines: [dmtx] },*/
+    ]],
 ]
 
 
@@ -176,7 +207,6 @@ const addNewWeek = (array, panelName) => {
         </div>`
     )
     newWeekRow.append(weekNumberDiv)
-
     weekNumber++
 
     for (let j = 0; j < array.length; j++) {
