@@ -1,16 +1,8 @@
-// Add dates to html
-// const startDate = new Date("2023-09-25");
-// const dates = $('.card__date')
-// dates.each(function (index) {
-//     const date = new Date(startDate.getFullYear(), startDate.getMonth(), startDate.getDate() + index).toDateString()
-//     $(this).text(date)
-// })
-
 // Accordion
 const accordion = document.getElementsByClassName("heading-secondary");
 
 for (let i = 0; i < accordion.length; i++) {
-    accordion[i].addEventListener("click", function() {
+    accordion[i].addEventListener("click", function () {
         this.classList.toggle("active");
         const panel = $(this).next('.panel')[0];
         const openClass = 'open'
@@ -24,11 +16,13 @@ for (let i = 0; i < accordion.length; i++) {
 }
 
 
-// Image popup
+
+// Image modal
 const cards = $('.card')
-const popupOverlay = $('#gallery-popup')[0]
-const popupImageContainer = $('#gallery-popup__info')[0]
-const galleryControls = $('.gallery-popup__controls')[0]
+const modalBackdrop = $('#modal__backdrop')[0]
+const modalOverlay = $('#modal__overlay')[0]
+let modalOverlayCompare = $('#modal__overlay-compare')
+const modalControls = $('#modal__controls')[0]
 let selectedImage = null
 let cardIndex = null
 const prevArrow = $('#prev')
@@ -38,26 +32,52 @@ cards.each(function (index) {
     const card = $(this)
     card.click(function () {
         cardIndex = index
-        popupOverlay.classList.add('visible')
-        galleryControls.classList.add('visible')
+        modalBackdrop.classList.add('visible')
+        modalControls.classList.add('visible')
         $('body').css("overflow", "hidden");
         selectedImage = $(card[0]).clone()[0];
-        popupImageContainer.append(selectedImage)
+        modalOverlay.append(selectedImage)
 
         // Add event listener on keydown
         document.addEventListener('keydown', handleKeyEvent, false);
     })
 })
 
+// Compare images
+let compareItemsList = []
+const compareElements = $(':checkbox')
+
+compareElements.click(function (e) {
+    const imageDate = e.target.name
+
+    if (compareItemsList.includes(imageDate)) {
+        compareItemsList = compareItemsList.filter(el => el !== imageDate)
+    } else {
+        compareItemsList.push(imageDate)
+
+        if (compareItemsList.length >= 2) {
+            compareItemsList.forEach(item => {
+                const card = $(`[data-date='${item}']`).clone()[0]
+                $(modalOverlayCompare).append(card)
+            })
+
+            modalBackdrop.classList.add('visible')
+            $('body').css("overflow", "hidden");
+        }
+    }
+
+    console.log(modalOverlayCompare)
+})
+
 const handleKeyEvent = (event) => {
     const name = event.key;
     if (name === 'ArrowRight') loadNextImage()
     if (name === 'ArrowLeft') loadPrevImage()
-    if (name === 'Escape') closePopup()
+    if (name === 'Escape') closeModal()
 }
 
-$(popupOverlay).click(function () {
-    closePopup()
+$(modalBackdrop).click(function () {
+    closeModal()
 })
 
 $(prevArrow).click(function () {
@@ -68,11 +88,20 @@ $(nextArrow).click(function () {
     loadNextImage()
 })
 
-const closePopup = () => {
-    popupOverlay.classList.remove('visible')
-    galleryControls.classList.remove('visible')
-    $(popupImageContainer).empty()
+const closeModal = () => {
+    modalBackdrop.classList.remove('visible')
+    modalControls.classList.remove('visible')
     $('body').css("overflow", "auto");
+
+    // Clear Image Preview
+    $(modalOverlay).empty()
+
+    // Clear Image Compare
+    $(modalOverlayCompare).empty()
+    compareElements.each(function (){
+        $(this)[0].checked = false
+    })
+    compareItemsList = []
 
     // Remove event listener on keydown
     document.removeEventListener('keydown', handleKeyEvent)
@@ -91,10 +120,12 @@ const loadNextImage = () => {
 }
 
 const loadImage = (index) => {
+    console.log(index)
     selectedImage = $(cards[index]).clone()[0];
-    $(popupImageContainer).empty()
-    popupImageContainer.append(selectedImage)
+    $(modalOverlay).empty()
+    modalOverlay.append(selectedImage)
 }
+
 
 
 

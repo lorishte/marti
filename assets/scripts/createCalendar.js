@@ -1,8 +1,8 @@
-// import * as fs from 'fs';
 
 const pn = 'Post-Neprol'
 const npr = 'Neprolysin'
 const dmtx = '2x Dermatix'
+
 const mapMedicineClasses = {
     'Post-Neprol': 'pn',
     'Neprolysin': 'npr',
@@ -154,13 +154,13 @@ const months = [
         { date: '02-02-2024', medicines: [dmtx] },
         { date: '03-02-2024', medicines: [dmtx] },
         { date: '04-02-2024', medicines: [dmtx] },
-        { date: '05-02-2024', medicines: [dmtx] },
+/*        { date: '05-02-2024', medicines: [dmtx] },
         { date: '06-02-2024', medicines: [dmtx] },
         { date: '07-02-2024', medicines: [dmtx] },
         { date: '08-02-2024', medicines: [dmtx] },
         { date: '09-02-2024', medicines: [dmtx] },
         { date: '10-02-2024', medicines: [dmtx] },
-        { date: '11-02-2024', medicines: [dmtx] },
+        { date: '11-02-2024', medicines: [dmtx] },*/
         /*{ date: '12-02-2024', medicines: [dmtx] },
         { date: '13-02-2024', medicines: [dmtx] },
         { date: '14-02-2024', medicines: [dmtx] },
@@ -182,9 +182,7 @@ const months = [
     ]],
 ]
 
-
 const generateImageUrl = (date) => {
-    console.log(date);
     if (date === 'no-image') return 'assets/images/no-image.jpg'
     return `assets/images/${date.substr(3)}/${date}.jpg`
 }
@@ -215,15 +213,20 @@ const addNewWeek = (array, panelName) => {
         const medicines = day.medicines.map(med => `<span class=${mapMedicineClasses[med]}>${med}</span>`)
 
         const card = $(
-            `<div class="card">
-                <div class="card__image">
-                    <img src=${generateImageUrl(imageDate)} />
+            `<div class="card-container">
+                <div class="card" data-date=${imageDate}>
+                    <div class="card__image">
+                        <img src=${generateImageUrl(imageDate)} />
+                    </div>
+                    <div class="card__copy">
+                        <p class="card__date">${formatDate(imageDate)}</p>
+                        <p class="card__medicine">
+                            ${medicines}
+                        </p>
+                    </div>
                 </div>
-                <div class="card__copy">
-                    <p class="card__date">${formatDate(imageDate)}</p>
-                    <p class="card__medicine">
-                        ${medicines}
-                    </p>
+                <div class="compare-controls">
+                    <input type="checkbox" name=${imageDate} />
                 </div>
             </div>`
         )
@@ -239,7 +242,7 @@ const generateContent = () => {
         const currentMontName = currentMonth[0]
         const currentMonthDays = currentMonth[1]
 
-        const isTheLastMonth = i === months.length - 1
+        const isTheLastMonth = i === months.length - 1 - 1
 
         // Add PANEL_NAME
         const panelName = $(`<p class="heading-secondary">${currentMontName}</p>`)

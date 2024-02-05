@@ -147,7 +147,7 @@ body {
       overflow-x: scroll;
       justify-content: initial; } }
 
-.gallery-popup {
+.modal__backdrop {
   position: fixed;
   visibility: hidden;
   opacity: 0;
@@ -161,52 +161,55 @@ body {
   background: rgba(49, 49, 49, 0.9);
   z-index: 100;
   transition: .5s; }
-  .gallery-popup.visible {
+  .modal__backdrop.visible {
     visibility: visible;
     opacity: 1; }
-  .gallery-popup__info {
-    display: grid;
-    align-content: center;
-    justify-content: center; }
-  .gallery-popup .card {
+  .modal__backdrop .card {
     justify-items: center;
     text-align: center; }
-    .gallery-popup .card__image {
+    .modal__backdrop .card__image {
       max-width: 90%;
       height: auto;
       max-height: 80vh; }
-    .gallery-popup .card__date {
+    .modal__backdrop .card__date {
       color: #ababab; }
-  .gallery-popup__controls {
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-    width: 100%;
-    position: fixed;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    justify-content: space-between;
-    padding: 3rem;
-    color: #ababab;
-    z-index: 200; }
+.modal__overlay {
+  display: grid;
+  align-content: center;
+  justify-content: center; }
+.modal__controls {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  justify-content: space-between;
+  padding: 3rem;
+  color: #ababab;
+  z-index: 200; }
+  @media only screen and (max-width: 43.75em) {
+    .modal__controls {
+      padding: 1rem; } }
+  .modal__controls span {
+    padding: 2rem 3rem;
+    background: #353535; }
     @media only screen and (max-width: 43.75em) {
-      .gallery-popup__controls {
-        padding: 1rem; } }
-    .gallery-popup__controls span {
-      padding: 2rem 3rem;
-      background: #353535; }
-      @media only screen and (max-width: 43.75em) {
-        .gallery-popup__controls span {
-          padding: 1rem 1.5rem; } }
-      .gallery-popup__controls span#prev {
-        transform: rotate(180deg); }
-      .gallery-popup__controls span:hover {
-        cursor: pointer; }
-    .gallery-popup__controls.visible {
-      display: flex;
-      opacity: 1;
-      visibility: visible; }
+      .modal__controls span {
+        padding: 1rem 1.5rem; } }
+    .modal__controls span#prev {
+      transform: rotate(180deg); }
+    .modal__controls span:hover {
+      cursor: pointer; }
+  .modal__controls.visible {
+    display: flex;
+    opacity: 1;
+    visibility: visible; }
+
+#modal__overlay-compare {
+  grid-template-columns: repeat(2, 1fr); }
 
 .panel {
   max-height: 0;
@@ -250,6 +253,14 @@ body {
     background-color: #FCD7D7; }
   .card__medicine .dmtx {
     background-color: #b4d6ff; }
+
+.card-container {
+  position: relative; }
+
+.compare-controls {
+  position: absolute;
+  top: 1rem;
+  right: 1rem; }
 
 .info__row {
   display: grid;
