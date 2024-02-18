@@ -184,7 +184,8 @@ const months = [
 
 const generateImageUrl = (date) => {
     if (date === 'no-image') return 'assets/images/no-image.jpg'
-    return `assets/images/${date.substr(3)}/${date}.jpg`
+    // return `assets/images/${date.substr(3)}/${date}.jpg`
+    return `assets/images/${date.substr(3)}/${date}.webp`
 }
 
 const formatDate = (date) => {
