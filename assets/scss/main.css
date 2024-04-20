@@ -277,7 +277,8 @@ body {
   display: grid;
   grid-template-columns: min-content repeat(7, 1fr);
   gap: 1rem;
-  border-bottom: 1px solid #eee; }
+  border-bottom: 1px solid #eee;
+  z-index: 1; }
   .weekdays .day {
     font-size: 1.3rem;
     padding-left: .2rem; }

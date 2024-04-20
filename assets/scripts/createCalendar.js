@@ -229,7 +229,7 @@ const months = [
         { date: '13-04-2024', medicines: [dmtx] },
         { date: '14-04-2024', medicines: [dmtx] },
         { date: '15-04-2024', medicines: [dmtx] },
-        { date: '16-04-2024', medicines: [dmtx] },
+        { date: '16-04-2024', medicines: [dmtx], noImage: true },
         { date: '17-04-2024', medicines: [dmtx] },
         { date: '18-04-2024', medicines: [dmtx] },
         // { date: '19-04-2024', medicines: [dmtx] },
@@ -282,7 +282,7 @@ const addNewWeek = (array, panelName) => {
             `<div class="card-container">
                 <div class="card" data-date=${imageDate}>
                     <div class="card__image">
-                        <img src=${generateImageUrl(imageDate)} />
+                        <img src=${day.noImage ? '/assets//images/no-image.jpg' : generateImageUrl(imageDate)} />
                     </div>
                     <div class="card__copy">
                         <p class="card__date">${formatDate(imageDate)}</p>
