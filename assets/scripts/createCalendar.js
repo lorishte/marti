@@ -281,8 +281,6 @@ const months = [
 ]
 
 const generateImageUrl = (date) => {
-    if (date === 'no-image') return 'assets/images/no-image.jpg'
-    // return `assets/images/${date.substr(3)}/${date}.jpg`
     return `assets/images/${date.substr(3)}/${date}.webp`
 }
 
@@ -315,7 +313,7 @@ const addNewWeek = (array, panelName) => {
             `<div class="card-container">
                 <div class="card" data-date=${imageDate}>
                     <div class="card__image">
-                        <img src=${day.noImage ? '/assets/images/no-image.jpg' : generateImageUrl(imageDate)} />
+                        <img src=${day.noImage ? 'assets/images/no-image.jpg' : generateImageUrl(imageDate)} />
                     </div>
                     <div class="card__copy">
                         <p class="card__date">${formatDate(imageDate)}</p>
